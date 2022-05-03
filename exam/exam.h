@@ -5,7 +5,6 @@
 #define ENTER 13 
 #pragma once
 #include <iostream>
-#include <experimental/filesystem>
 #include <string>
 #include <vector>
 #include <algorithm>
@@ -15,7 +14,6 @@
 #include <math.h>
 #include "Menu.h"
 
-using namespace std::filesystem;
 using std::begin;
 using std::end;
 using std::string;
@@ -59,7 +57,7 @@ namespace Exam
 		Test(string obj) :name(obj) {}
 	};
 
-	class UPTest 
+	class UPTest ///пройденный тест
 	{
 	public:
 		string testname="";
@@ -214,6 +212,7 @@ namespace Exam
 						system("pause>0");
 					}
 					}
+					obj.stop++;
 				}
 				obj.passed = 1;
 			}
